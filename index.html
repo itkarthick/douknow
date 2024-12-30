@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+details > summary {
+  padding: 4px;
+  width: 200px;
+  background-color: #eeeeee;
+  border: none;
+  box-shadow: 1px 1px 2px #bbbbbb;
+  cursor: pointer;
+}
+
+details > p {
+  background-color: #eeeeee;
+  padding: 4px;
+  margin: 0;
+  box-shadow: 1px 1px 2px #bbbbbb;
+}
+</style>
+</head>
+<body>
+<center>
+<h1>Do you know one think</h1>
+
+<details>
+  <summary>i wanna say you something  </summary>
+</details>
+
+<p>now click this button 👇</p> <button id="show1">click me </button>
+<div id="show2"></div>
+</center>
+<script>
+  let welcome= ()=>
+    document.getElementById('show2').innerHTML = `<center><h1>I love you and</h2>
+    <img src="https://th.bing.com/th/id/OIP.WbQiO0ErjkVfx5Y8Mil4OAHaEc?w=480&h=288&rs=1&pid=ImgDetMain" /></center>`
+
+  document.getElementById('show1').addEventListener('click',()=>{welcome()})
+</script>
+</body>
+</html>
